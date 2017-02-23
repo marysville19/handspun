@@ -1,0 +1,48 @@
+
+
+/* another reset style */
+html {
+box-sizing: inherit;
+}
+
+*, *:before, *:after {
+  inherit;
+/* this is to see every border*/
+  border:3px solid black;
+}
+
+/* Universal styles*/
+a {
+  text-decoration: none;
+  }
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+body{
+  font-family: 'Lustria', serif;
+  }
+
+section{
+  background-color: #f5f4ec;
+}
+
+
+
+header, section, footer
+{
+  padding: 5%;
+  text-align: center;
+}
+
+/* home page image lower section*/
+
+.grid-padding{
+  padding: 2%;
+}
+.homepage-LHS{
+  padding: 1%;
+}
