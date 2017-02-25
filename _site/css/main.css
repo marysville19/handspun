@@ -18,7 +18,10 @@ a {
   text-decoration: none;
   color: black;
 }
+.signature-fionahall{
+  font-family: 'Sacramento', cursive;
 
+}
 img{
     max-width: 100%;
     height: auto;
@@ -26,7 +29,7 @@ img{
 
 
 body{
-  font-family:'Sacramento', cursive;
+  font-family:lustria;
   }
 
 section{
@@ -35,7 +38,7 @@ section{
 
 
 
-header, section, footer
+header, section
 {
   padding: 5%;
   text-align: center;
@@ -68,7 +71,7 @@ h1{
   font-family:'Sacramento', cursive;
   letter-spacing:10px;
   color: white;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 p{
   font-family:lustria;
@@ -99,6 +102,46 @@ p{
   background-size: cover;
 
 }
+/*............FOOTER...................*/
+
+.h2-footer{
+  color: white;
+  letter-spacing: 40px;
+  font-size: 5rem;
+  padding: 0;
+
+}
+.footer-signature{
+  font-size: 2rem;
+  padding: 0%;
+  font-weight: normal;
+  letter-spacing: 20px;
+  color: white;
+}
+
+footer{
+    padding: 5%;
+    text-align: center;
+
+}
+.icon-footer{
+  font-size: 2rem;
+  letter-spacing: 16px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*............FOOTER...................*/
 
 h2{
   font-family: lustria;
@@ -113,15 +156,24 @@ h2{
 }
 
 
-
+.nav-container{
+  top: 0;
+  position: relative;
+}
 .button-nav{
-  border: 2px solid #515151;
-  padding: 1%;
-  background-color:rgba(197, 204, 199, 0.65)
+  border-right: 1px solid rgba(0, 0, 0, 0.65);
+  background-color:rgba(197, 204, 199, 0.65);
+  font-weight: normal;
+  letter-spacing: 10px;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
 }
 
-
-
+/* home page image ..............*/
+.hompage-display{
+  padding-top: 11rem;
+}
 
 
 
