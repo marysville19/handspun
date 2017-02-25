@@ -7,14 +7,17 @@ box-sizing: inherit;
 
 *, *:before, *:after {
   inherit;
-/* this is to see every border*/
-  border:3px solid black;
+/* this is to see every border
+
+border:3px solid black;*/
+
 }
 
 /* Universal styles*/
 a {
   text-decoration: none;
-  }
+  color: black;
+}
 
 img{
     max-width: 100%;
@@ -23,7 +26,7 @@ img{
 
 
 body{
-  font-family: 'Lustria', serif;
+  font-family:'Sacramento', cursive;
   }
 
 section{
@@ -37,12 +40,313 @@ header, section, footer
   padding: 5%;
   text-align: center;
 }
+header{
+background-color: rgba(0,0,0,0.5);
+}
+
+/*  footer
+footer-opacity{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:white;
+  opacity: .7; */
+/*  .................NAV-home page.................*/
+
+h1{
+  font-size: 5rem;
+  padding: 0%;
+  font-family: lustria;
+  font-weight: normal;
+  letter-spacing: 40px;
+  color: white;
+  /*text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);*/
+  }
+.h2-header{
+  font-family:'Sacramento', cursive;
+  letter-spacing:10px;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+p{
+  font-family:lustria;
+}
+.banner{
+  position: relative;
+}
+.video-overlay{
+  position: absolute;
+  background-color:black;
+  opacity: .2;
+}
+
+.banner-image-index video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(video/videoheader.mp4) no-repeat;
+  background-size: cover;
+
+}
+
+h2{
+  font-family: lustria;
+  font-weight: normal;
+  letter-spacing: 40px;
+  color: white;
+
+}
+
+.no-padding{
+  padding: 0;
+}
+
+
+
+.button-nav{
+  border: 2px solid #515151;
+  padding: 1%;
+  background-color:rgba(197, 204, 199, 0.65)
+}
+
+
+
+
+
+
+
+/*  .................NAV-home page.................*/
 
 /* home page image lower section*/
+footer{
+  background-color:rgba(197, 204, 199, 0.65);
+}
+
+.lightbox-content{
+  display:none;
+}
+#mylightbox{
+width: 50vw;
+height:50vh;
+}
 
 .grid-padding{
   padding: 2%;
 }
 .homepage-LHS{
   padding: 1%;
+}
+
+/*.................Tabs Range................*/
+
+/*                   Tab styles          */
+
+/*............... RANGE .....................*/
+.background-image-wove{
+  background-image: ;
+}
+
+
+
+
+
+
+.range-tabs{
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.range-woven-image{
+  margin: 0 auto 0 auto;
+  padding-bottom: 7%;
+}
+
+
+
+
+/*....................Tab imported from .........*/
+/*....................<!-- This is a tab feature that I copy and pasted from;https://codepen.io/cssjockey/pen/jGzuK  -->...........................*/
+
+
+.container{
+	width: 100vw;
+	margin: 0 auto;
+}
+
+
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: block;
+	padding: 10px 15px;
+
+}
+
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 7%;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+    /*.......TABS RAnge...........................*/
+
+    /*..............LOCATION PAGE.............*/
+/* TODO:  */
+.circle-image{
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 50%;
+padding:50% 0;
+}
+
+
+.location .col-4{
+  border-top: 1px solid black;
+}
+
+/*............................................................*/
+
+
+
+form {
+  width: 58.33333333%;
+  margin: 0 auto;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #313A3D;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field label + span {
+  font-family: 'SSStandard';
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: #FD9638;
+  color: #313A3D;
+}
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #FD9638;
+}
+form .field:hover label {
+  width: 18%;
+  background: #313A3D;
+  color: white;
+}
+form input[type="submit"] {
+  background: #FD9638;
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #313A3D;
+  color: #FD9638;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
 }

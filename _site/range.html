@@ -15,13 +15,20 @@
 
 
     <!-- fonts  .............................................-->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+
 <!-- fonts  ..........................................-->
     <!--            Icon font TODO        -->
     <!--            google font TODO        -->
     <!--      the grixlex style                  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+<!-- ...................LIGHT BOX...................... -->
+    <link href="path/to/lightbox.css" rel="stylesheet">
+
+    <!-- ..................Contact box...................... -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <!-- ...................LIGHT BOX...................... -->
 
     <!-- this is the link to the css style sheet -->
     <!-- Reference main Remember to get rid of the slash  -->
@@ -33,39 +40,152 @@
   <body>
 
 
-    <header class="banner banner-image-index">
+    <header class="banner ">
+      <div class="video-overlay">
+
+      </div>
       <!-- This is where my image header will be  -->
-      <h1>handspun by fiona hall</h1>
-      <h2></h2>
+
+      <a href="/index.html">
+        <h1>handspun range</h1>
+      </a>
+
+      
+
+      <h2 class="h2-header"> by fiona hall </h2>
     </header>
 
     <!-- TODO find button icon -->
-    <section class="grid">
-      <div class=" col-3">
+    <section class="grid no-padding">
+      <div class=" col-3 button-nav">
         <a href="/range.html">range</a>
       </div>
 
-      <div class=" col-3">
+      <div class=" col-3 button-nav">
         <a href="/story.html">Story</a>
       </div>
 
-      <div class=" col-3">
+      <div class=" col-3 button-nav">
         <a href="/location.html">Location</a>
       </div>
+      <!--................this is taken from codepen http://codepen.io/see8ch/pen/KpLrd  -->
 
-      <div class="col-3">
-        <a href="/range.html">Contact</a>
+      <div class="col-3 button-nav ">
+        <a href="contact.html" data-featherlight="ajax">contact</a>
       </div>
 
-
     </section>
-
-
 <!-- This is so that we can target the main work in one division -->
 
     <div class="main">
 
       <h1>Range</h1>
+
+<!-- This is a tab feature that I copy and pasted from;https://codepen.io/cssjockey/pen/jGzuK  -->
+
+<div class="container">
+  <div class="grid range-tabs">
+    <div class=" col-2 ">
+      <nav>
+        <ul class="tabs">
+      		<li class="tab-link current" data-tab="tab-1">woven</li>
+      		<li class="tab-link" data-tab="tab-2">crochet</li>
+      		<li class="tab-link" data-tab="tab-3">knit</li>
+      		<li class="tab-link" data-tab="tab-4">raw</li>
+    	   </ul>
+      </nav>
+    </div>
+    <div class="col-10">
+<!--..................WOVEN.......................................  -->
+      	<div id="tab-1" class="tab-content current">
+
+          <div class="range-woven-image background-image-woven" style="background-image: url(images/farm.jpg);">
+
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+      	</div>
+<!--............KNIT........................................... -->
+
+      	<div id="tab-2" class="tab-content">
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+<!-- ............CROCHET........................................... -->
+
+      </div>
+      	<div id="tab-3" class="tab-content">
+          <div class="range-woven-image">
+
+            <img src="images/farm.jpg" alt="">
+
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+      </div>
+
+<!-- ............RAW......................................... -->
+
+      </div>
+      	<div id="tab-4" class="tab-content">
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+          <div class="range-woven-image">
+            <img src="images/farm.jpg" alt="">
+          </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div><!-- container -->
 
 
 
@@ -77,23 +197,34 @@
 <!--  *******site footer  open  *****  -->
 
 <footer>
+  <div class="footer-opacity">
 
-<h2> handspun-by fiona hall</h2>
+  </div>
 
-<!-- TODO add links to icons  -->
-<i class="fa fa-facebook-square" aria-hidden="true"></i>
+  <div class="footer-content">
 
-<i class="fa fa-instagram" aria-hidden="true"></i>
 
-<i class="fa fa-envelope-o" aria-hidden="true"></i>
+    <h2> handspun-by fiona hall</h2>
 
+  <!-- TODO add links to icons  -->
+    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+  </div>
 </footer>
-<!--  *******site footer closed *****  -->
+  <!--  *******site footer closed *****  -->
 
 
 <!-- this is the jquery link  -->
+<!-- jquery light box ..................................  -->
+
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- jquery light box ..................................  -->
     <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+      src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
     <script type="text/javascript" src='scripts/main.js'>
     </script>

@@ -1,0 +1,90 @@
+---
+layout: default
+title: Range
+banner-heading: handspun
+locations:
+  - image_path: /images/Rose.jpg
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    map_path:
+  - image_path: /images/Heide1.png
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    map_path:
+  - image_path: /images/healesville.jpg
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    map_path:
+---
+
+<!--.................... first row.................... -->
+<section class="grid location">
+{% for object in page.locations %}
+
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.image_path}})">
+      <!--Image  -->
+    </div>
+  </div>
+
+  <div class="col-4">
+    <p>{{object.description}}</p>
+  </div>
+
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.map_path}})">
+      <!--Image  -->
+    </div>
+  </div>
+
+{% endfor %}
+  <!-- ....................Second Row.................. -->
+
+
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.image_path}})">
+      <!--Image  -->
+    </div>
+  </div>
+
+  <div class="col-4">
+    <p>{{object.description}}</p>
+  </div>
+
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.map_path}})">
+      <!--Image  -->
+    </div>
+  </div>
+
+
+
+  <!-- ....................three Row.................. -->
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.image_path}})">
+      <!--Image  -->
+    </div>
+  </div>
+
+  <div class="col-4">
+    <p>{{object.description}}</p>
+  </div>
+
+  <div class="col-4">
+    <div class="circle-image" style="background-image: url({{object.map_path}})">
+
+    </div>
+  </div>
+</section>
+
+  <!--  ....................BACKUP...........................-->
+  <!-- <div class="col-4">
+    <div class="circle-image" style="background-image: url('../images/Rose.jpg')">
+
+
+    </div>
+
+
+  </div>
+
+
+    <div class="col-4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div> -->
