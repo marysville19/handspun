@@ -1,77 +1,41 @@
 ---
 layout: default
-title: Range
+title: location
 banner-heading: handspun
 locations:
   - image_path: /images/Rose.jpg
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    map_path:
+    title: Location 1
   - image_path: /images/Heide1.png
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    map_path:
+    title:
   - image_path: /images/healesville.jpg
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    map_path:
+    title:
 ---
 
 <!--.................... first row.................... -->
-<section class="grid location">
-{% for object in page.locations %}
+<section class="location-container">
 
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.image_path}})">
-      <!--Image  -->
-    </div>
-  </div>
+  {% for location in page.locations %}
 
-  <div class="col-4">
-    <p>{{object.description}}</p>
-  </div>
+    <div class="grid location">
 
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.map_path}})">
-      <!--Image  -->
-    </div>
-  </div>
+      <div class="col-6 no-padding">
+        <div class="circle-image" style="background-image: url({{location.image_path}})">
+          <!--Image  -->
+        </div>
+      </div>
 
-{% endfor %}
-  <!-- ....................Second Row.................. -->
-
-
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.image_path}})">
-      <!--Image  -->
-    </div>
-  </div>
-
-  <div class="col-4">
-    <p>{{object.description}}</p>
-  </div>
-
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.map_path}})">
-      <!--Image  -->
-    </div>
-  </div>
-
-
-
-  <!-- ....................three Row.................. -->
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.image_path}})">
-      <!--Image  -->
-    </div>
-  </div>
-
-  <div class="col-4">
-    <p>{{object.description}}</p>
-  </div>
-
-  <div class="col-4">
-    <div class="circle-image" style="background-image: url({{object.map_path}})">
+      <div class="col-6 no-padding">
+        <h4>{{location.title}}</h4>
+        <p>{{location.description}}</p>
+      </div>
 
     </div>
-  </div>
+
+  {% endfor %}
+
 </section>
 
   <!--  ....................BACKUP...........................-->

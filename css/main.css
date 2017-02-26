@@ -67,6 +67,11 @@ h1{
   color: white;
   /*text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);*/
   }
+
+.contact-me{
+  color:black;
+  letter-spacing: 5px;
+}
 .h2-header{
   font-family:'Sacramento', cursive;
   letter-spacing:10px;
@@ -85,8 +90,13 @@ h3{
   font-family: lustria;
   letter-spacing: 6px;
 }
+h4 {
+  padding:0;
+  color: black;
+}
 p{
   font-family:lustria;
+  color: black;
 }
 .banner{
   position: relative;
@@ -143,6 +153,11 @@ footer{
   letter-spacing: 16px;
   color: white;
 }
+
+.icon-footer .fa:hover {
+  color: white;
+  transition: color 0.5s;
+}
 /*............FOOTER...................*/
 
 h2{
@@ -159,8 +174,7 @@ h2{
 
 
 .nav-container{
-  top: 0;
-  position: relative;
+  margin: 0;
 }
 .button-nav{
   border-right: 1px solid rgba(0, 0, 0, 0.65);
@@ -170,6 +184,9 @@ h2{
   color: black;
   text-align: center;
   padding-top: 10px;
+}
+.button-nav:last-child {
+  border-right: 0;
 }
 
 /* home page image ..............*/
@@ -202,6 +219,18 @@ height:50vh;
   padding: 1%;
 }
 
+
+/* Forms */
+button, input, optgroup, select, textarea {
+  font-family: lustria;
+}
+
+/* Lightbox custom styles */
+.featherlight .featherlight-content {
+  width: 70%;
+  max-height: 90%;
+}
+
 /*.................Tabs Range................*/
 
 /*                   Tab styles          */
@@ -224,6 +253,8 @@ height:50vh;
 .range-woven-image{
   margin: 0 auto 0 auto;
   padding-bottom: 7%;
+
+  overflow: hidden;
 }
 
 
@@ -253,7 +284,7 @@ ul.tabs li{
 	background: #f5f5f5;
 	color: #222;
 	display: block;
-	padding:  27px 29px 12px 0px;
+	padding: 15px 0;
 
 }
 
@@ -275,17 +306,22 @@ ul.tabs li.current{
 
     /*..............LOCATION PAGE.............*/
 /* TODO:  */
-.circle-image{
-width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-border-radius: 50%;
-padding:50% 0;
+.circle-image {
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 30% 0;
 }
 
-
-.location .col-4{
-  border-top: 1px solid black;
+.location {
+  border-bottom: 1px solid black;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.location:last-child {
+  border-bottom: none;
 }
 
 /*............................................................*/
@@ -300,13 +336,14 @@ form .field {
   width: 100%;
   position: relative;
   margin-bottom: 15px;
+  max-width:1100px;
 }
 form .field label {
   text-transform: lowercase;
   position: absolute;
   top: 0;
   left: 0;
-  background: #313A3D;
+  background: #828b8e;
   width: 100%;
   padding: 18px 0;
   font-size: 1.45em;
@@ -344,7 +381,7 @@ form .field textarea {
   color: #313A3D;
   font-size: 1.4em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 form .field input[type="text"]#msg,
 form .field textarea#msg {
@@ -387,7 +424,7 @@ form input[type="submit"] {
   color: white;
   -webkit-appearance: none;
   border: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   position: relative;
   padding: 13px 50px;
   font-size: 1.4em;
@@ -407,4 +444,211 @@ form input[type="submit"]:hover {
 form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
+}
+
+
+
+
+/* Zoe hover effect */
+
+/* Common style */
+.hover-effect figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+  margin: 0;
+}
+
+.hover-effect figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+.hover-effect figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.hover-effect figure figcaption::before,
+.hover-effect figure figcaption::after {
+	pointer-events: none;
+}
+
+.hover-effect figure figcaption,
+.hover-effect figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.hover-effect figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.hover-effect figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.hover-effect figure h2 span {
+	font-weight: 800;
+}
+
+.hover-effect figure h2,
+.hover-effect figure p {
+	margin: 0;
+}
+
+.hover-effect figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 3.75em;
+	background: #fff;
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-zoe h2 {
+	float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+	color: #3c4a50;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+figure.effect-zoe p.description {
+	position: absolute;
+	bottom: 8em;
+	padding: 2em;
+	color: #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe p.icon-links a span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+	content: '\e000';
+}
+
+.icon-paper-clip::before {
+	content: '\e001';
+}
+
+.icon-heart::before {
+	content: '\e024';
+}
+
+figure.effect-zoe h2 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+
+figure.effect-zoe figcaption {
+  padding: 1em 0;
+}
+figure.effect-zoe figcaption .padding {
+  padding: 0 1em;
+}
+.hover-effect figure p {
+  text-transform: none;
+  font-size: 15px;
+}
+.hover-effect figure p a {
+  font-size: 20px;
+  margin-top: 5px;
+  display: block;
+}
+
+figure.effect-zoe p.description {
+  width: 100%;
+  left: 0;
+  bottom: 150px;
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
 }
